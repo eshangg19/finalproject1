@@ -1,0 +1,222 @@
+body{
+    margin: 10;
+    background-color: rgb(177, 150, 129); 
+    background-image: url(../CSS/IMAGE/KUSINA.jpg);
+    background-size: 105% auto;
+    background-attachment:scroll;
+    background-repeat: no-repeat;
+    background-position:top;
+}
+.logo{
+    position:absolute;
+    height: auto;
+    right: 0;
+    margin-right: 80px;
+    width: 71px;
+}
+.navbar{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    padding: 10px;
+    padding-right: 50px; 
+    justify-content:flex-start;
+    align-content: space-around;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(229, 241, 255);
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px 30px;
+    
+    
+}
+.navbar ul li a:hover{
+    background: rgb(255, 255, 255);
+    color: rgb(17, 136, 216);
+    padding: 10px 30px;
+    border-radius: 15px;
+    transform: translateY(-5px) ;
+}
+.title h1 {
+    color: white;
+    font-size: 150px;
+    text-align: center;
+    margin-bottom: -20px;
+    line-height: 1;
+    text-shadow: 4px 4px 8px yellow;
+    font-weight: bold;
+    animation: fadeMove 3s ease-in-out infinite alternate;
+}
+@keyframes fadeMove {
+        0% {
+            opacity: 0;
+            transform: translateY(-10px);
+            color: #ffffff;
+        }
+        50% {
+            opacity: 1;
+            transform: translateY(0);
+            color: white;
+        }
+        100% {
+            opacity: 0.8;
+            transform: translateY(10px);
+            color: #ffffff;
+        }
+ }
+.map {
+    background-color: white;
+    padding: 10px 20px;
+    border-radius:10px ;
+    font-size: 24px;
+    font-weight: bold;
+    color: #1a1a1a;
+    border: 2px solid #3a3a3a;
+    margin-top: 100px;
+    display:inline-block;
+    justify-content: center;
+    text-align: center;
+    
+}
+.footer {
+    background-color: #1f1f1f;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.footer p {
+    margin: 0 0 10px 0;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.footer a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: white;
+}
+@media (max-width: 992px) {
+
+    .title h1 {
+        font-size: 90px;
+    }
+
+    .navbar ul li a {
+        font-size: 14px;
+        padding: 8px 20px;
+    }
+
+    .logo {
+        width: 55px;
+        margin-right: 40px;
+    }
+
+    body {
+        background-size: cover;
+    }
+
+    .map {
+        font-size: 20px;
+        padding: 8px 16px;
+    }
+}
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 60px;
+    }
+
+    .navbar ul li a {
+        font-size: 16px;
+        padding: 10px 20px;
+        display: block;
+        border-radius: 10px;
+    }
+
+    .logo {
+        width: 60px;
+        right: 50%;
+        transform: translateX(50%);
+        top: 10px;
+        margin-right: 0;
+    }
+
+    .title h1 {
+        font-size: 60px;
+        margin-top: 40px;
+    }
+
+    body {
+        background-size: 150% auto;
+        background-position: top;
+    }
+
+    .map {
+        font-size: 18px;
+        padding: 8px 16px;
+        margin-top: 40px;
+    }
+
+    .footer ul li {
+        display: block;
+        margin: 5px 0;
+    }
+}
+@media (max-width: 480px) {
+
+    .title h1 {
+        font-size: 45px;
+    }
+
+    .navbar ul li a {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .map {
+        font-size: 16px;
+        padding: 5px 12px;
+    }
+
+    body {
+        background-size: 180% auto;
+    }
+}

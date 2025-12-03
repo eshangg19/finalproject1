@@ -1,0 +1,251 @@
+body{
+    margin: 10;
+    background-color: rgb(177, 150, 129); 
+    background-image: url(../CSS/IMAGE/KUSINA.jpg);
+    background-size: 105% auto;
+    background-attachment:scroll;
+    background-repeat: no-repeat;
+    background-position:top;
+}
+.logo{
+    position:absolute;
+    height: auto;
+    right: 0;
+    margin-right: 80px;
+    width: 71px;
+}
+.navbar{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    padding: 10px;
+    padding-right: 50px; 
+    justify-content:flex-start;
+    align-content: space-around;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(229, 241, 255);
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px 30px;
+    
+    
+}
+.navbar ul li a:hover{
+    background: rgb(255, 255, 255);
+    color: rgb(17, 136, 216);
+    padding: 10px 30px;
+    border-radius: 15px;
+    transform: translateY(-5px) ;
+}
+.section{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #ddd;
+}
+.container{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+}
+.content-section{
+    float: left;
+    width: 55%;
+}
+.about-section{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.image-section img{
+    width: 150px;   
+    height: 150px;  
+    object-fit: cover;
+    border-radius: 6px;
+    transition: transform 0.4s ease,box-shadow 0.4s ease; 
+}
+.image-section img:hover{
+    transform: scale(1.08);
+    box-shadow: 0 8px 18px rgb(0,0,0,0.3);
+}
+.content-section .title{
+    text-transform: uppercase;
+    font-size: 28px;
+}
+.content-section .content{
+    margin-top: 20px;
+    color: #5d5d5d;
+    font-size: 21%;
+}
+.content-section .content{
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+}
+.footer {
+    background-color: #1f1f1f;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.footer p {
+    margin: 0 0 10px 0;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.footer a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: white;
+}
+@media (max-width: 1024px) {
+
+    .container {
+        width: 90%;
+        padding-top: 70px;
+    }
+
+    .content-section {
+        width: 60%;
+    }
+
+    .image-section img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .navbar ul li a {
+        padding: 8px 20px;
+        font-size: 15px;
+    }
+}
+@media (max-width: 768px) {
+
+    .navbar {
+        justify-content: center;
+        padding-right: 0;
+    }
+
+    .logo {
+        width: 55px;
+        right: 10px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .navbar ul li a {
+        padding: 6px 15px;
+        font-size: 14px;
+    }
+
+    .content-section {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+
+    .about-section {
+        justify-content: center;
+    }
+
+    .image-section img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .content-section .title h1 {
+        font-size: 28px;
+    }
+
+    .content-section .content {
+        font-size: 15px;
+    }
+}
+@media (max-width: 480px) {
+
+    body {
+        padding: 0;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .logo {
+        width: 45px;
+        right: 5px;
+        margin-right: 0;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+    }
+
+    .navbar ul li a {
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+
+    .content-section .title h1 {
+        font-size: 24px;
+    }
+
+    .content-section h2 {
+        font-size: 18px;
+    }
+
+    .content-section .content {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .image-section img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .about-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fb img {
+        width: 35px;
+        height: 35px;
+    }
+}

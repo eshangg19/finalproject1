@@ -1,0 +1,227 @@
+body{
+    margin: 10;
+    background-color: rgb(177, 150, 129); 
+    background-image: url(../CSS/IMAGE/KUSINA.jpg);
+    background-size: 105% auto;
+    background-attachment:scroll;
+    background-repeat: no-repeat;
+    background-position:top;
+}
+.logo{
+    position:absolute;
+    height: auto;
+    right: 0;
+    margin-right: 80px;
+    width: 71px;
+}
+.navbar{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    padding: 10px;
+    padding-right: 50px; 
+    justify-content:flex-start;
+    align-content: space-around;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(229, 241, 255);
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px 30px;
+    
+    
+}
+.navbar ul li a:hover{
+    background: rgb(255, 255, 255);
+    color: rgb(17, 136, 216);
+    padding: 10px 30px;
+    border-radius: 15px;
+    transform: translateY(-5px) ;
+}
+
+.container {
+    width: 350px;
+}
+
+.signup-box {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.signup-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: #45a049;
+}
+
+.login-text {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.login-text a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+.footer {
+    background-color: #1f1f1f;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    
+}
+
+.footer .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.footer p {
+    margin: 0 0 10px 0;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.footer a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: white;
+}
+@media (max-width: 1024px) {
+    .container {
+        width: 300px;
+    }
+
+    .navbar ul li a {
+        font-size: 15px;
+        padding: 8px 20px;
+    }
+
+    .signup-box {
+        padding: 25px;
+    }
+}
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .navbar ul li a {
+        padding: 6px 15px;
+        font-size: 14px;
+    }
+
+    .container {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .signup-box {
+        padding: 20px;
+    }
+
+    .btn {
+        font-size: 15px;
+    }
+
+    .login-text {
+        font-size: 13px;
+    }
+}
+@media (max-width: 480px) {
+    .logo {
+        width: 50px;
+        margin-right: 10px;
+    }
+
+    .navbar ul li a {
+        font-size: 13px;
+        padding: 5px 10px;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .signup-box {
+        padding: 15px;
+    }
+
+    .signup-box h2 {
+        font-size: 20px;
+    }
+
+    .input-group input {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
